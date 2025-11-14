@@ -168,7 +168,7 @@ void setup()
   /* Initialization of the motor driver*/
   /* Please, be careful that pins can change if you change the Nucleo board */
   /* Give a look at the DataSheet of the Nucleo to find a correct configuration */
-  motor = new L6206(D2, A4, D5, D4, A0, A1);
+  motor = new L6206(2, A4, 5, 4, A0, A1);
 
   if (motor->init() != COMPONENT_OK) {
     exit(EXIT_FAILURE);
